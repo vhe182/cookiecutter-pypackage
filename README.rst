@@ -18,14 +18,14 @@ Cookiecutter-Cafe : A cookiecutter template for rapidly initializing an OpenCafe
     |_______|
 
 
-Cookiecutter-Cafe template for an OpenCafe cafe and roast package. Cookiecutter
-is originally created by `audreyr`_. This will
-generate both repos used for functional test automation. Each repo contains
-a directory structure for development.  *This setup is only a guideline, you
-are more than welcome to tear out what you do not need*.
+Cookiecutter_ template for an OpenCafe cafe and roast package. Cookiecutter
+is originally created by audreyr:
+    https://github.com/audreyr/cookiecutter-pypackage
 
-.. _`audreyr`: https://github.com/audreyr/cookiecutter-pypackage
-
+Cookiecutter-Cafe generates both repos used for functional test automation. Each repo
+contains a directory structure for development.  *This setup is only a
+guideline, you are more than welcome to tear out what you do not need or add
+anything you want*.
 
 * GitHub repo: https://github.com/vhe182/cookiecutter-pypackage/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
@@ -36,9 +36,11 @@ Features
 
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``py.test``
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4, 3.5
-* Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
+* Sphinx_ docs: Documentation ready for generation with, for example, GitHubPages_
+* Bumpversion_: Pre-configured version bumping with a single command
 
-.. _Cookiecutter: https://github.com/vhe182/cookiecutter
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _OpenCAFE: https://github.com/CafeHub/opencafe
 
 Quickstart
 ----------
@@ -56,13 +58,11 @@ Then:
 
 * Create a repo and put it there.
 * Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``)
-* Add the repo to your ReadTheDocs_ account + turn on the ReadTheDocs service hook.
-* Release your package by pushing a new tag to master.
-* Add a `requirements.txt` file that specifies the packages you will need for
-  your project and their versions. For more info see the `pip docs for requirements files`_.
 
 .. _`pip docs for requirements files`: https://pip.pypa.io/en/stable/user_guide/#requirements-files
 
-For more details, see the `cookiecutter-pypackage tutorial`_.
 
-.. _`cookiecutter-pypackage tutorial`: https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html
+.. _Tox: http://testrun.org/tox/
+.. _Sphinx: http://sphinx-doc.org/
+.. _GitHubPages_: https://pages.github.com/
+.. _Bumpversion: https://github.com/peritus/bumpversion
